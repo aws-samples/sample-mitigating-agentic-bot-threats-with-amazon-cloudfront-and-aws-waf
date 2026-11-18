@@ -1,0 +1,7 @@
+node_modules/
+cdk.out/
+dist/
+*.log
+.DS_Store
+# Generated into the Lambda@Edge package at synth time
+cdk/lambda/edge/config.json

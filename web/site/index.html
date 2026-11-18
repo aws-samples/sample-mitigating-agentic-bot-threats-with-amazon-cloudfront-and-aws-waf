@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edge Tickets (demo)</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Edge Tickets</h1>
+      <p>A demo storefront protected by AWS WAF Bot Control, Lambda@Edge, and Amazon Rekognition Face Liveness.</p>
+    </header>
+
+    <main>
+      <section class="notice" aria-labelledby="try-it">
+        <h2 id="try-it">Try the step-up challenge</h2>
+        <p>
+          In production, AWS WAF Bot Control flags sessions that show signs of browser automation.
+          For this demo, add <code>?simulate-agent=1</code> to any URL to make AWS WAF flag your
+          request the same way.
+        </p>
+        <p><a class="button" href="/?simulate-agent=1">Simulate an agent-flagged session</a></p>
+      </section>
+
+      <section aria-labelledby="events">
+        <h2 id="events">Upcoming events</h2>
+        <ul class="events">
+          <li>
+            <h3>Symphony at the Edge</h3>
+            <p>Friday, 8:00 PM &middot; Main Hall</p>
+            <a href="/checkout.html?event=symphony">Get tickets</a>
+          </li>
+          <li>
+            <h3>Low-Latency Jazz Quartet</h3>
+            <p>Saturday, 9:30 PM &middot; Studio B</p>
+            <a href="/checkout.html?event=jazz">Get tickets</a>
+          </li>
+          <li>
+            <h3>Cache Invalidation Comedy Night</h3>
+            <p>Sunday, 7:00 PM &middot; The Annex</p>
+            <a href="/checkout.html?event=comedy">Get tickets</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer><p>Sample application. Not a real ticketing service.</p></footer>
+  </body>
+</html>

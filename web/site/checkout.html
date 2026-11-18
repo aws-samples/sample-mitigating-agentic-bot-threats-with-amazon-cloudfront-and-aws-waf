@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - Edge Tickets (demo)</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Checkout</h1>
+      <p><a href="/">Back to events</a></p>
+    </header>
+
+    <main>
+      <section aria-labelledby="checkout">
+        <h2 id="checkout">Reserve your seats</h2>
+        <p>
+          High-value flows like checkout are what agent-driven browsers target. Every request to
+          this page passes through the Lambda@Edge gate: if AWS WAF has flagged the session, the
+          gate requires a Face Liveness check before the page is served.
+        </p>
+        <form aria-describedby="demo-note">
+          <label for="quantity">Tickets</label>
+          <input id="quantity" name="quantity" type="number" min="1" max="8" value="2" />
+          <button type="button" disabled>Purchase (disabled in demo)</button>
+        </form>
+        <p id="demo-note" class="muted">This demo does not process orders.</p>
+      </section>
+    </main>
+
+    <footer><p>Sample application. Not a real ticketing service.</p></footer>
+  </body>
+</html>

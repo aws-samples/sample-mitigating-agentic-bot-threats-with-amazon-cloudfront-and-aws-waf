@@ -1,0 +1,22 @@
+{
+  "name": "liveness-challenge-page",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT-0",
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "@aws-amplify/ui-react": "6.15.7",
+    "@aws-amplify/ui-react-liveness": "3.7.0",
+    "aws-amplify": "6.22.2",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "6.1.2",
+    "vite": "8.3.4"
+  }
+}
